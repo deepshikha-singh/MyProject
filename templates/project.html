@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block projectactive %}active{% endblock projectactive %}
+{% block title %}Project{% endblock title %}
+{% block body %}
+
+<div class="container my-3">
+  <h2><center>Projects Detail</center></h2>
+  <div class="row">
+    <div class="col-md-4">
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/10.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Developer's</h5>
+        <p class="card-text">Web developers create and maintain websites. They are also responsible for the site's technical aspects, such as its performance and capacity, 
+        which are measures of a website's speed and how much traffic the site can handle. In addition, web developers may create content for the site.</p>
+        <a href="#" class="btn btn-primary">Take a look</a>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/11.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Designer's</h5>
+        <p class="card-text">Web designers plan, create and code internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips. 
+        A web designer is responsible for creating the design and layout of a website or web pages. It and can mean working on a brand new website or updating an already 
+        existing site.</p>
+        <a href="#" class="btn btn-primary">Take a look</a>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/10.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Tester's</h5>
+        <p class="card-text">A tester is an individual that tests software or similar projects for bugs, errors, defects or any problem that the end-user may come across. 
+        To put it simply, the role of a tester is to test out products and provide reports to the project team about any issues or improvements that the product may require.</p>
+        <a href="#" class="btn btn-primary">Take a look</a>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'img/11.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Marketing Team</h5>
+        <p class="card-text">A marketing manager is responsible for managing the promotion and positioning of a brand or the products and services that a company sells. 
+        Typically marketing managers are employed to attract more customers to buy from the company and to raise brand awareness through the creation of marketing campaigns.</p>
+        <a href="#" class="btn btn-primary">Take a look</a>
+      </div>
+    </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock body %}

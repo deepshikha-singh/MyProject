@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block contactactive %}active{% endblock contactactive %}
+{% block title %}Contact{% endblock title %}
+{% block body %}
+
+<div class="container my-3">
+  <h2 class="text-center">Contact me</h2>
+  <form action="/contact" method="post" enctype="multipart/form-data" >
+    {% csrf_token %}
+    <div class="mx-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" id="name" name="name" class="form-control mb-0"  placeholder="Enter your Name">
+    </div>
+    <div class="mx-3">
+      <label for="exampleInputEmail" class="form-label">Email</label>
+      <input type="email" name="email" class="form-control" id="Email" placeholder="Enter your Email">
+    </div>
+    <div class="mx-3">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="phone" name="phone" class="form-control" id="phone" placeholder="Enter your Number">
+    </div>
+    <div class="mx-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Text Area</label>
+      <input type="textarea" name="textarea" class="form-control" id="Textarea" placeholder="Give me your Suggestion">
+    </div>
+    <div class="mx-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+{% endblock body %}
